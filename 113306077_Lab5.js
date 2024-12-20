@@ -4,7 +4,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const math = parseFloat(mathInput.value);
     const english = parseFloat(englishInput.value);
 
-    if (isNaN(math) || isNaN(english)) {
+    if (isNaN(math) || isNaN(english) || math>100 || math<0 || english>100 ||english<0) {
         alert('Please enter valid numbers for both Math and English grades.');
         return;
     }
